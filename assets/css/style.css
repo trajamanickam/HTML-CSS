@@ -1,5 +1,5 @@
 .container {
-  width: 1165px;
+  /*width: 1165px;*/
 }
 
 .header {
@@ -74,9 +74,35 @@
 
 .title {
   width: 429px;
-  float: right;
+  float: right !important;
   position: relative;
 }
+
+@media (min-width: 250px) and (max-width: 450px) {  
+  .container{
+    width: auto;
+  }
+  .title {
+    width: 214px !important;
+  }
+  .vector {
+    position: absolute;
+    top: 350px !important;
+  }
+  .title-content{
+    font-size: 35px !important;
+    line-height: 42px !important;
+  }
+  .title-description{
+    font-size: 15px !important;
+    line-height: 20px !important;
+    top: 227px !important;
+  }
+  .line1{
+    top: 404px !important;
+  }
+}
+
 
 .title-content {
   position: absolute;
@@ -298,38 +324,56 @@
   position: relative;
 }
 
+@keyframes zoominoutsinglefeatured {
+  0% {
+      transform: scale(1,1);
+  }
+  50% {
+      transform: scale(1.2,1.2);
+  }
+  100% {
+      transform: scale(1,1);
+  }
+}
+
 .ellipse8 {
   left: 198px;
   position: absolute;
+  animation: zoominoutsinglefeatured 2s infinite ;
 }
 
 .ellipse9 {
   position: absolute;
   top: 201px;
   left: 75px;
+  animation: zoominoutsinglefeatured 2s infinite ;
 }
 
 .ellipse10 {
   left: 171px;
   position: absolute;
   top: 344px;
+  animation: zoominoutsinglefeatured 2s infinite ;
 }
 
 .ellipse11 {
   position: absolute;
   top: 27px;
+  animation: zoominoutsinglefeatured 2s infinite ;
 }
 
 .ellipse12 {
   position: absolute;
   top: 110px;
   left: 440px;
+  animation: zoominoutsinglefeatured 2s infinite ;
 }
 
 .ellipse13 {
   left: 358px;
   position: absolute;
   top: 266px;
+  animation: zoominoutsinglefeatured 2s infinite ;
 }
 
 .learning-title {
